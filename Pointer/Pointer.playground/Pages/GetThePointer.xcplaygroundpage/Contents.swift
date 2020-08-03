@@ -1,10 +1,7 @@
 import UIKit
 
 var str = "Hello, playground"
-print(MemoryLayout.size(ofValue: str))
-print(MemoryLayout.stride(ofValue: str))
-print(MemoryLayout.alignment(ofValue: str))
-print(MemoryLayout<String>.size)
+
 func test1(_ ptr :UnsafeMutablePointer<String>){
     ptr.pointee += "  Swift"//泛型类指针修改此指针引用的实例。
     
